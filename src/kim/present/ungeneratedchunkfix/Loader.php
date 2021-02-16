@@ -49,6 +49,9 @@ final class Loader extends PluginBase implements Listener{
             $vec = EntityDataHelper::parseVec3($namedtag, "Pos", false);
         }else{
             $world = $worldManager->getDefaultWorld();
+
+            //Prevents an exception thrown when a get safe spawn an ungenerated world
+            $this->prepareChunk($world, $world->getSpawnLocation());
             $vec = $world->getSafeSpawn();
         }
         $this->prepareChunk($world, $vec);
