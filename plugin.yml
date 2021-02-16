@@ -1,8 +1,8 @@
 ---
-name: Template
-main: blugin\template\Loader
-version: 0.1.0
+name: UngeneratedChunkFix
+main: kim\present\ungeneratedchunkfix\Loader
+version: 1.0.0
 api: [ 4.0.0 ]
-author: AuthorName
-description: Template of Pocketmine-MP plugin
+author: PresentKim
+description: Prevents an exception thrown when a player accesses an ungenerated chunk
 ...
